@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\B111C5.jpeg" />
+    <None Remove="Resources\C346F5.jpg" />
+    <None Remove="Resources\D325D4.jpg" />
+    <None Remove="Resources\E112C6.jpg" />
+    <None Remove="Resources\F256G6.jpg" />
+    <None Remove="Resources\F325D4.jpg" />
+    <None Remove="Resources\G432G6.jpg" />
+    <None Remove="Resources\G843H5.jpg" />
+    <None Remove="Resources\H542F5.jpg" />
+    <None Remove="Resources\icon.ico" />
+    <None Remove="Resources\J532V5.jpg" />
+    <None Remove="Resources\K839K3.jpg" />
+    <None Remove="Resources\L293S9.jpg" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\M112C8.jpg" />
+    <None Remove="Resources\M294G9.jpg" />
+    <None Remove="Resources\M398S9.jpg" />
+    <None Remove="Resources\N283K3.jpg" />
+    <None Remove="Resources\picture.png" />
+    <None Remove="Resources\S384K2.jpg" />
+    <None Remove="Resources\S432T5.jpg" />
+    <None Remove="Resources\T238C7.jpg" />
+    <None Remove="Resources\А112Т4.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\B111C5.jpeg" />
+    <Resource Include="Resources\C346F5.jpg" />
+    <Resource Include="Resources\D325D4.jpg" />
+    <Resource Include="Resources\E112C6.jpg" />
+    <Resource Include="Resources\F256G6.jpg" />
+    <Resource Include="Resources\F325D4.jpg" />
+    <Resource Include="Resources\G432G6.jpg" />
+    <Resource Include="Resources\G843H5.jpg" />
+    <Resource Include="Resources\H542F5.jpg" />
+    <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\J532V5.jpg" />
+    <Resource Include="Resources\K839K3.jpg" />
+    <Resource Include="Resources\L293S9.jpg" />
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="Resources\M112C8.jpg" />
+    <Resource Include="Resources\M294G9.jpg" />
+    <Resource Include="Resources\M398S9.jpg" />
+    <Resource Include="Resources\N283K3.jpg" />
+    <Resource Include="Resources\picture.png" />
+    <Resource Include="Resources\S384K2.jpg" />
+    <Resource Include="Resources\S432T5.jpg" />
+    <Resource Include="Resources\T238C7.jpg" />
+    <Resource Include="Resources\А112Т4.jpg" />
+  </ItemGroup>
+
+</Project>

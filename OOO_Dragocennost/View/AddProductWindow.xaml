@@ -1,0 +1,75 @@
+﻿<Window x:Class="OOO_Dragocennost.View.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOO_Dragocennost.View"
+        mc:Ignorable="d"
+        Title="AddProductWindow" Height="500" Width="850">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label VerticalAlignment="Center" Content="Добавление товара" Style="{StaticResource HeaderLabel}"></Label>
+        <Image HorizontalAlignment="Left" Width="80" Source="/Resources/logo.png" ></Image>
+        <Button Content="Назад" Width="150" Height="30" HorizontalAlignment="Right" Click="Back_Click"></Button>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <StackPanel>
+                    <Label Content="Артикуль товара"></Label>
+                    <TextBox Text="{Binding ProductArticleNumber}" x:Name="ArticleText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Имя продукта"></Label>
+                    <TextBox Text="{Binding ProductName}" x:Name="NameText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Количество продуктов"></Label>
+                    <TextBox Text="{Binding ProductUnit}" x:Name="UnitText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Цена"></Label>
+                    <TextBox Text="{Binding ProductCost}" x:Name="CostText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Максимальная скидка"></Label>
+                    <TextBox Text="{Binding ProductMaxDiscount}" x:Name="MaxDiscountText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Производитель"></Label>
+                    <ComboBox SelectedValue="{Binding ProductManufacturerNavigation}" DisplayMemberPath="ManufacturerName" SelectedIndex="0" x:Name="ManufacturerCombo"></ComboBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <StackPanel>
+                    <Label Content="Поставщик"></Label>
+                    <ComboBox SelectedValue="{Binding ProductSupplierNavigation}" DisplayMemberPath="SupplierName" SelectedIndex="0" x:Name="SupplierCombo"></ComboBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Категория"></Label>
+                    <ComboBox SelectedValue="{Binding ProductCategoryNavigation}" DisplayMemberPath="CategoryName" SelectedIndex="0" x:Name="CategoryCombo"></ComboBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Кол-во на складе"></Label>
+                    <TextBox Text="{Binding ProductQuantityInStock}" x:Name="StockText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Описание"></Label>
+                    <TextBox Text="{Binding ProductDescription}" x:Name="DescriptionText"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Image HorizontalAlignment="Center" x:Name="PhotoText" Width="100" Height="100"></Image>
+                    <Button Content="Добавить фото" Click="Add_Click"></Button>
+                </StackPanel>
+                <Label></Label>
+                <Button Content="Сохранить" Click="Save_Click"></Button>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+</Window>

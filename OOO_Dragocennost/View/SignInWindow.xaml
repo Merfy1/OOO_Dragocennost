@@ -1,0 +1,25 @@
+﻿<Window x:Class="OOO_Dragocennost.View.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOO_Dragocennost"
+        mc:Ignorable="d"
+        Title="Вход" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Вход" Style="{StaticResource HeaderLabel}"></Label>
+        <Image Width="100" Source="/Resources/logo.png"></Image>
+        <Label Content="Логин"></Label>
+        <TextBox x:Name="LoginText" Text="8lf0g@yandex.ru"></TextBox>
+        <Label Content="Пароль"></Label>
+        <PasswordBox x:Name="PasswordText" Password="2L6KZG"></PasswordBox>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Content="Войти" Click="Login_Click"></Button>
+            <Button Grid.Column="1" Content="Гость" Click="Guest_Click"></Button>
+        </Grid>
+    </StackPanel>
+</Window>
